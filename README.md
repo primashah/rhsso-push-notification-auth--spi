@@ -1,6 +1,6 @@
 # rhsso-push-notification-authenticator-spi
 
-This authentication SPI allows to implement 
+This authentication SPI allows to implement 2factor authentication by sending verification code using Firebase on  mobile applications
 
 ## Pre-requiste
 
