@@ -8,7 +8,7 @@
 	<name>RHSSO Push Authenticator</name>
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<keycloak.version>6.0.1</keycloak.version>
+		<keycloak.version>7.0.1</keycloak.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
