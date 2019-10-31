@@ -6,8 +6,10 @@ public class PushAuthConstants {
 	public static final String USER_ATTR_PUSH_CODE = "pushVerificationCode";
 	public static final String USER_ATTR_PUSH_CODE_EXPIRY = "pushVerificationCodeExpiryTime";
 	
-	public static final String VERIFICATION_ERROR_FORM = "push-validation-expire-error.ftl";
+	public static final String VERIFICATION_ERROR_FORM = "push-validation-error.ftl";
+	public static final String EXPIRED_ERROR_FORM = "push-validation-expire-error.ftl";
 	public static final String VERIFICATION_INPUT_FORM = "push-input-validation.ftl";
+	
 	public static final String ERROR_MESSAGE_FORM ="sendCodeErrorMessage";
 	public static final String ERROR_MESSAGE_INVALIDE_CODE_FORM ="invalidCodeMessage";
 	

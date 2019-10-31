@@ -13,7 +13,8 @@ import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
 
-import push.authenticator.firebase.FCMInitializer;
+
+import push.authenticator.firebase.FirebaseInit;
 
 
 
@@ -21,7 +22,7 @@ public class PushAuthenticatorFactory implements AuthenticatorFactory, Configura
 
 	public static final String PROVIDER_ID = "push-notification-authenticator";
 	private static final PushAuthenticator SINGLETON = new PushAuthenticator();
-	private static FCMInitializer FCM = new FCMInitializer();
+	private static FirebaseInit FirebaseInitializer = new FirebaseInit();
 	private static final Logger logger = Logger.getLogger(PushAuthenticatorFactory.class.getPackage().getName());
 	
 	
@@ -41,7 +42,7 @@ public class PushAuthenticatorFactory implements AuthenticatorFactory, Configura
 	}
 
 	public void init(Scope scope) {
-		FCM.initialize();
+		FirebaseInitializer.initialize();
 		logger.debug("Method [init]");
 	}
 
